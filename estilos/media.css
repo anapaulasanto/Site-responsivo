@@ -1,0 +1,17 @@
+@media screen and (max-width: 1220px) {
+
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    section > .text-side-section > h2 {
+        font-size: 40px;
+    }
+
+    main {
+        padding: 0;
+    }
+}
