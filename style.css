@@ -10,6 +10,12 @@
 body {
     background-color: rgb(2, 2, 2);
     color: white;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body,html {
+    overflow-x: hidden;
 }
 
 header {
@@ -19,8 +25,9 @@ header {
     background-size: cover;
     margin: 0 auto;
     padding: 0 80px;
-    border-bottom: 1px solid rgb(92, 91, 91);
+    border-bottom: 1px solid yellow;
     width: 100vw;
+    height: 100vh;
 }
 
 nav {
@@ -74,7 +81,12 @@ nav> ul > li > a:hover::after {
 }
 
 .btn:hover {
-    border: 1px solid rgb(210, 232, 125);
+    border: 1px solid rgb(226, 234, 197);
+}
+
+nav > ul > .close-icon > .fa-xmark {
+    display: none;
+    font-size: 30px;
 }
 
 .menu-icon {
@@ -123,27 +135,36 @@ main {
 
 section {
     display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+
+article {
+    display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
 }
 
-section > .text-side-section > h2 {
+section > article > .text-side-section > h2 {
     font-size: 60px;
     width: 600px;
+    padding-top: 70px;
 }
 
-section > .text-side-section > p {
+section >  article > .text-side-section > p {
     color: gray;
     width: 700px;
     margin-bottom: 30px;
 }
 
-section > .text-side-section > a {
+section >  article > .text-side-section > a {
     text-decoration: none;
     color: white;
 }
 
-section > .img-side-section > img {
+section > article >  .img-side-section > img {
     width: 600px;
 }
 
@@ -170,7 +191,7 @@ section > .img-side-section > img {
     margin-bottom: 70px;
 }
 
-section > #cards {
+section > article > #cards {
     display: flex;
     flex-direction: row;
     gap: 60px;

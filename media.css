@@ -1,17 +1,209 @@
-@media screen and (max-width: 1220px) {
+@media screen and (max-width: 992px) {
+
+    main {
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    header {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 70px;
+    }
+
+    .content-header > h1 {
+        font-size: 70px;
+        margin-top: 18%;
+    }
 
     section {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        padding-top: 60px;
     }
 
-    section > .text-side-section > h2 {
+    section > article > .text-side-section > h2 {
         font-size: 40px;
     }
 
+    section > article >  .img-side-section > img {
+        width: 480px;
+    }
+
+    article {
+        flex-direction: column;
+    }
+
+    #article2 {
+        flex-direction: column-reverse;
+    }
+
+    .text-card > h2 {
+        font-size: 40px;
+    }
+    
+    .text-card > p {
+        font-size: 13px;
+    }
+
+    .section-card {
+        padding: 30px 20px;
+        margin-top: 50px;
+    }
+
+    section > article > #cards {
+        gap: 40px;
+    }
+
+    #cards > .card > h3 {
+        width: 100px;
+    }
+
+    #cards > .card {
+        width: 260px;
+        padding: 6px 40px;
+    }
+
+    #cards > .card > p {
+        font-size: 12px;
+    }
+
+    #clients-section > h2 {
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+
+    #clients-section > #img-clients {
+        gap: 0px;
+    }
+
+    #clients-section > #img-clients > img {
+        width: 180px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    nav > ul {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(85, 86, 36, 0.96);
+        width: 80%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        display: none;
+    }
+
+    nav > ul > li > a {
+        color: black;
+        font-weight: 500;
+    }
+
+    nav ul li .btn {
+        background-color: rgba(29, 28, 28, 0.244);
+        color:white;
+    }
     main {
         padding: 0;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    /*nav ul .close-icon .fa-xmark {
+        display: block;
+        position: absolute;
+        top: 46px;
+    }
+    */
+
+    header {
+        padding: 0 20px;
+    }
+
+    .content-header > h1 {
+        font-size: 40px;
+        margin-top: 50% ;
+    }
+
+    .content-header > p {
+        width: 400px;
+    }
+
+    section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    article {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 100px;
+    }
+
+    section >  article > .text-side-section {
+        height: 100vh;
+    }
+
+    section > article > .text-side-section > h2 {
+        font-size: 35px;
+        letter-spacing: 2px;
+        width: 320px;
+        text-align: center;
+        padding-top: 40px;
+        margin-bottom: 80px;
+    }
+
+    section > #article1 {
+        border-bottom: 1px solid yellow;
+        width: 100vw;
+    }
+
+    section > #article1 > .text-side-section > h2 {
+        padding-top: 80px;
+        
+    }
+
+    section >  article > .text-side-section > p {
+        width: 300px;
+        text-align: center;
+        margin: 0 20px;
+        padding-bottom: 80px;
+    }
+
+    section > article >  .img-side-section > img {
+        display: none;
+    }
+    
+
+    section > article > .text-side-section > a {
+       display: block;
+       margin: 0 auto;
+       width: 200px;
+        text-align: center;
+    }
+
+    .btn {
+        padding: 12px 18px;
+        font-size: 18px;
+    }
+
+    #article1 > .text-side-section > a {
+        background-color: rgb(93, 93, 29);
+        border: none;
+    } 
+
+    .section-card {
+        margin-top: 0;
+        padding: 50px 180px;
     }
 }
