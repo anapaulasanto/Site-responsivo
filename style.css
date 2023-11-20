@@ -11,11 +11,15 @@ body {
     background-color: rgb(2, 2, 2);
     color: white;
     margin: 0;
-    overflow-x: hidden;
+    font-size: 1.6rem;
 }
 
 body,html {
     overflow-x: hidden;
+}
+
+html {
+    font-size: 62.5%;
 }
 
 header {
@@ -36,31 +40,32 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding-top: 30px;
+    max-width: 100%;
 }
 
 nav > img {
     cursor: pointer;
 }
 
-nav > ul {
+nav > ul > .text-bar {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     gap: 60px;
 }
 
-nav > ul > li {
+nav > ul> .text-bar > li {
     list-style-type: none;
     
 }
 
-nav > ul > li > a {
+nav > ul > .text-bar > li > a {
     text-decoration: none;
     color: white;
-    font-size: 18px;
+    font-size: 1.8rem;
 }
 
-nav> ul > li > a:not(.btn)::after {
+nav> ul > .text-bar > li > a:not(.btn)::after {
     content: "";
     background-color: rgb(253, 253, 253);
     height: 3px;
@@ -70,7 +75,7 @@ nav> ul > li > a:not(.btn)::after {
     transition: 0.3s;
 }
 
-nav> ul > li > a:hover::after {
+nav> ul > .text-bar > li > a:hover::after {
     width: 100%;
 }
 
@@ -84,15 +89,20 @@ nav> ul > li > a:hover::after {
     border: 1px solid rgb(226, 234, 197);
 }
 
-nav > ul > .close-icon > .fa-xmark {
+nav > ul > .text-bar > .close-icon > .fa-xmark {
     display: none;
-    font-size: 30px;
+    font-size: 3.0rem;
 }
 
 .menu-icon {
     cursor: pointer;
-    font-size: 25px;
+    font-size: 2.5rem;
     display: none;
+}
+
+.hide {
+    display: block;
+    transition: 2s all;
 }
 
 .content-header {
@@ -106,14 +116,14 @@ nav > ul > .close-icon > .fa-xmark {
 .content-header > h1 {
     margin-top: 200px;
     color: white;
-    font-size: 100px;
+    font-size: 10rem;
     margin-bottom: 10px;
     letter-spacing: 10px;
 }
 
 .content-header > p {
     color: rgb(132, 132, 132);
-    font-size: 18px;
+    font-size: 1.8rem;
     width: 600px;
     text-align: center;
     margin-bottom: 30px;
@@ -122,7 +132,7 @@ nav > ul > .close-icon > .fa-xmark {
 .content-header > a {
     text-decoration: none;
     color: white;
-    font-size: 18px;
+    font-size: 1.8rem;
 }
 
 main {
@@ -131,6 +141,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 100%;  
 }
 
 section {
@@ -148,7 +159,7 @@ article {
 }
 
 section > article > .text-side-section > h2 {
-    font-size: 60px;
+    font-size: 6.0rem;
     width: 600px;
     padding-top: 70px;
 }
@@ -180,7 +191,7 @@ section > article >  .img-side-section > img {
 
 .text-card > h2 {
     width: 900px;
-    font-size: 60px;
+    font-size: 6.0rem;
     text-align: center;
     margin-top: 20px;
 }
@@ -195,6 +206,7 @@ section > article > #cards {
     display: flex;
     flex-direction: row;
     gap: 60px;
+    
 }
 
 #cards > .card {
@@ -249,7 +261,7 @@ section > article > #cards {
 }
 
 #clients-section > h2 {
-    font-size: 55px;
+    font-size: 5.5rem;
     margin-bottom: 20px;
 }
 
@@ -299,7 +311,7 @@ footer {
 }
 
 #social-footer > a > i {
-    font-size: 20px;
+    font-size: 2.0rem;
     padding: 10px;
     margin: 0px 5px;
     border-radius: 10px;
